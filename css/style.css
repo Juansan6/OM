@@ -227,7 +227,6 @@ p {
 
 .portal-clientes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -294,6 +293,31 @@ footer{
 
 
 /*!----------------MEDIA QUERIES----------------*/
+
+@media screen and (max-width: 1140px) {
+    .portal-clientes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .portal-clientes-img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .portal-clientes-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .login-form {
+        width: 80%;
+        padding: 50px 0px 50px 0px;
+    }
+
+}
 
 @media screen and (max-width: 920px) {
     .cliente {

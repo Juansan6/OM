@@ -1,0 +1,29 @@
+.portal-clientes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-container-portal-clientes{
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/portal-clientes.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .login-form{
+        margin: 0px auto;
+        padding: 0px 50px 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .portal-clientes-titulo{
+            padding: 0px 0px 50px 0px;
+        }
+        a{
+            margin-top: 15px;
+        }
+    }
+}

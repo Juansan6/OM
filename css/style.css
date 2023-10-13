@@ -359,7 +359,8 @@ footer{
 .footer img {
     width: 20px;
     height: 20px;
-    padding: 0px 10px 0px 10px;
+    
+    
 }
 
 .footer-element p {
@@ -368,7 +369,7 @@ footer{
 
 
 
-/*!----------------MEDIA QUERIES----------------*/
+/*!----------------MEDIA QUERYS----------------*/
 
 @media screen and (max-width: 1140px) {
     .portal-clientes {
@@ -452,10 +453,6 @@ footer{
 
     .descripcion-servicio {
         padding: 0px 50px 0px 50px;
-    }
-
-    h3 {
-        /* padding: 30px 0px 30px 0px; */
     }
 
     .testimonios {

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Comfortaa";
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont-wght.ttf); }
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf); }
+
+/*!----------------RESET----------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+/*!----------------GENERAL----------------*/
+h2 {
+  font-size: 50px;
+  font-family: "Comfortaa";
+  font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin: 0px; }
+
+h3 {
+  /* margin-bottom: 30px; */
+  font-family: "Comfortaa";
+  font-size: 30px;
+  /* padding-top: 30px; */
+  font-weight: bold;
+  margin: 0px; }
+
+p {
+  line-height: normal;
+  margin: 0px;
+  font-family: "Poppins";
+  font-size: 20px; }
+
+.button {
+  font-size: 15px;
+  font-family: "Poppins";
+  color: black;
+  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  width: fit-content; }
+  .button:hover {
+    color: white;
+    background: linear-gradient(45deg, #4242eb, #f40ec6) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box; }
+
+/*!----------------HEADER----------------*/
+header {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  z-index: 1; }
+  header h1 {
+    font-size: 40px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px; }
+  header .barra-menu {
+    padding: 0px; }
+    header .barra-menu .contenedor-hamburguesa {
+      justify-content: flex-end !important;
+      padding: 0px;
+      flex-wrap: nowrap !important;
+      align-items: flex-start !important; }
+      header .barra-menu .contenedor-hamburguesa div .nav-hamburguesa {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+        align-items: flex-end;
+        text-align: right; }
+      header .barra-menu .contenedor-hamburguesa div li {
+        margin-left: 20px; }
+        header .barra-menu .contenedor-hamburguesa div li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Poppins"; }
+      header .barra-menu .contenedor-hamburguesa .menu-hamburguesa {
+        background-color: white;
+        border: 0px;
+        border-radius: 100%;
+        padding: 5px;
+        margin-left: 20px; }
+
+/*!----------------FOOTER----------------*/
+footer {
+  background-color: #000000;
+  color: white; }
+  footer .footer {
+    padding: 0px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; }
+    footer .footer .footer-element {
+      text-align: center;
+      font-family: "Poppins";
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      footer .footer .footer-element p {
+        margin: 10px; }
+      footer .footer .footer-element form {
+        margin-bottom: 5px; }
+      footer .footer .footer-element img {
+        width: 20px;
+        height: 20px;
+        margin: 0px 10px 0px 0px; }
+      footer .footer .footer-element div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0px 5px 0px; }
+      footer .footer .footer-element a {
+        border: 0px solid transparent; }
+
+/*!----------------INDEX----------------*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/fondo-herosection6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero .heroheader {
+    font-size: 100px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center; }
+  .hero .herotagline {
+    font-size: 40px;
+    font-family: "Poppins";
+    color: white;
+    margin-bottom: 80px;
+    text-align: center; }
+  .hero .herobutton {
+    font-size: 20px;
+    border: 0px solid transparent; }
+
+section .grid-servicios {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 3;
+  row-gap: 50px; }
+  section .grid-servicios .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 1px 42px 40px -24px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 42px 40px -24px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 42px 40px -24px rgba(0, 0, 0, 0.75); }
+  section .grid-servicios .descripcion-servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 100px 0px 100px;
+    grid-column: span 2; }
+    section .grid-servicios .descripcion-servicio p {
+      margin: 30px 0px 30px 0px; }
+
+section .testimonios {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0px auto;
+  font-family: "Poppins";
+  padding: 0px 0px 100px 0px; }
+  section .testimonios .testimonio {
+    padding: 0px 30px 0px 30px; }
+    section .testimonios .testimonio p {
+      text-align: center;
+      margin: 0px 0px 30px 0px; }
+    section .testimonios .testimonio .cliente {
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: right; }
+      section .testimonios .testimonio .cliente p {
+        font-size: 16px; }
+      section .testimonios .testimonio .cliente img {
+        width: 120px;
+        padding-left: 15px; }
+
+.portal-clientes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .portal-clientes .img-container-portal-clientes {
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/portal-clientes.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .portal-clientes .login-form {
+    margin: 0px auto;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .portal-clientes .login-form .portal-clientes-titulo {
+      padding: 0px 0px 50px 0px; }
+    .portal-clientes .login-form a {
+      margin-top: 15px; }

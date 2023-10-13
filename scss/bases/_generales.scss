@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa/Comfortaa-VariableFont-wght.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+/*!----------------RESET----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*!----------------GENERAL----------------*/
+
+h2 {
+    font-size: 50px;
+    font-family: "Comfortaa";
+    
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 0px;
+}
+
+h3 {
+    /* margin-bottom: 30px; */
+    font-family: "Comfortaa";
+    font-size: 30px;
+    /* padding-top: 30px; */
+    font-weight: bold;
+    margin: 0px;
+}
+
+p {
+    line-height: normal;
+    margin: 0px;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.button {
+    font-size: 15px;
+    font-family: "Poppins";
+    color: rgb(0, 0, 0);
+    background: linear-gradient(white, white) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    width: fit-content;
+    &:hover{
+        color: rgb(255, 255, 255);
+        background: linear-gradient(45deg, $color-primario, $color-secundario) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
+    }
+}

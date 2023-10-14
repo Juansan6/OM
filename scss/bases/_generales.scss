@@ -19,12 +19,8 @@
 /*!----------------GENERAL----------------*/
 
 h2 {
-    font-size: 50px;
     font-family: "Comfortaa";
-    
     font-weight: bold;
-    padding-top: 100px;
-    padding-bottom: 100px;
     text-align: center;
     margin: 0px;
 }
@@ -45,20 +41,3 @@ p {
     font-size: 20px;
 }
 
-.button {
-    font-size: 15px;
-    font-family: "Poppins";
-    color: rgb(0, 0, 0);
-    background: linear-gradient(white, white) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
-    border: 2px solid transparent;
-    width: fit-content;
-    &:hover{
-        color: rgb(255, 255, 255);
-        background: linear-gradient(45deg, $color-primario, $color-secundario) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
-    }
-}

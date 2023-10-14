@@ -1,3 +1,31 @@
+@charset "UTF-8";
+footer .footer .footer-element .button, .hero .button, section .grid-servicios .descripcion-servicio .button, .hero-analisis-de-procesos .button, .service-cta .button, .hero-business-intelligence .button, .hero-soporte-contable .button, .portal-clientes .login-form .button {
+  font-family: "Poppins";
+  color: black;
+  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  width: fit-content; }
+  footer .footer .footer-element .button:hover, .hero .button:hover, section .grid-servicios .descripcion-servicio .button:hover, .hero-analisis-de-procesos .button:hover, .service-cta .button:hover, .hero-business-intelligence .button:hover, .hero-soporte-contable .button:hover, .portal-clientes .login-form .button:hover {
+    color: white;
+    background: linear-gradient(45deg, #4242eb, #f40ec6) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box; }
+
+.hero-analisis-de-procesos, .hero-business-intelligence, .hero-soporte-contable {
+  width: 100%;
+  height: calc(100vh - 68px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 @font-face {
   font-family: "Comfortaa";
   src: url(../fonts/Comfortaa/Comfortaa-VariableFont-wght.ttf); }
@@ -13,11 +41,8 @@
 
 /*!----------------GENERAL----------------*/
 h2 {
-  font-size: 50px;
   font-family: "Comfortaa";
   font-weight: bold;
-  padding-top: 100px;
-  padding-bottom: 100px;
   text-align: center;
   margin: 0px; }
 
@@ -35,22 +60,6 @@ p {
   font-family: "Poppins";
   font-size: 20px; }
 
-.button {
-  font-size: 15px;
-  font-family: "Poppins";
-  color: black;
-  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box;
-  text-decoration: none;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 25px;
-  border: 2px solid transparent;
-  width: fit-content; }
-  .button:hover {
-    color: white;
-    background: linear-gradient(45deg, #4242eb, #f40ec6) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box; }
-
 /*!----------------HEADER----------------*/
 header {
   background-color: #000000;
@@ -67,6 +76,9 @@ header {
     font-weight: bold;
     color: white;
     margin: 0px; }
+    header h1 .logotipo {
+      text-decoration: none;
+      color: white; }
   header .barra-menu {
     padding: 0px; }
     header .barra-menu .contenedor-hamburguesa {
@@ -81,14 +93,15 @@ header {
         align-items: center;
         text-align: center;
         margin: 0px;
-        align-items: flex-end;
         text-align: right; }
       header .barra-menu .contenedor-hamburguesa div li {
         margin-left: 20px; }
         header .barra-menu .contenedor-hamburguesa div li a {
           text-decoration: none;
-          color: white;
+          color: white !important;
           font-family: "Poppins"; }
+        header .barra-menu .contenedor-hamburguesa div li .dropdown-menu {
+          --bs-dropdown-bg: #000; }
       header .barra-menu .contenedor-hamburguesa .menu-hamburguesa {
         background-color: white;
         border: 0px;
@@ -100,6 +113,9 @@ header {
 footer {
   background-color: #000000;
   color: white; }
+  footer h2 {
+    font-size: 50px;
+    padding: 100px 0px 100px 0px; }
   footer .footer {
     padding: 0px 0px 100px 0px;
     display: flex;
@@ -126,13 +142,14 @@ footer {
         justify-content: flex-start;
         align-items: center;
         padding: 0px 0px 5px 0px; }
-      footer .footer .footer-element a {
+      footer .footer .footer-element .button {
+        font-size: 15px;
         border: 0px solid transparent; }
 
 /*!----------------INDEX----------------*/
 .hero {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 68px);
   background-image: url("../img/fondo-herosection6.png");
   background-size: cover;
   background-position: center;
@@ -155,9 +172,14 @@ footer {
     color: white;
     margin-bottom: 80px;
     text-align: center; }
-  .hero .herobutton {
+  .hero .button {
     font-size: 20px;
     border: 0px solid transparent; }
+
+section h2 {
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 section .grid-servicios {
   display: grid;
@@ -179,6 +201,8 @@ section .grid-servicios {
     grid-column: span 2; }
     section .grid-servicios .descripcion-servicio p {
       margin: 30px 0px 30px 0px; }
+    section .grid-servicios .descripcion-servicio .button {
+      font-size: 20px; }
 
 section .testimonios {
   display: flex;
@@ -204,6 +228,106 @@ section .testimonios {
         width: 120px;
         padding-left: 15px; }
 
+/*!----------------SERVICIOS----------------*/
+/*!----------------ANÁLISIS DE PROCESOS----------------*/
+.hero-analisis-de-procesos {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/analisis-procesos.png"); }
+  .hero-analisis-de-procesos .service-header {
+    font-size: 100px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 0px; }
+  .hero-analisis-de-procesos .service-description {
+    font-size: 25px;
+    font-family: "Poppins";
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center; }
+  .hero-analisis-de-procesos .button {
+    font-size: 20px;
+    border: 0px solid transparent; }
+
+.service-feature {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 80px 0px 80px 0px; }
+  .service-feature div {
+    width: 350px; }
+    .service-feature div h3 {
+      padding-bottom: 50px; }
+
+.service-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #4242eb, #f40ec6);
+  padding: 80px 0px 80px 0px;
+  color: white; }
+  .service-cta h3 {
+    padding-bottom: 20px; }
+  .service-cta p {
+    width: 90%;
+    text-align: center; }
+  .service-cta .button {
+    font-size: 20px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #25d366, #34b7f1) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
+    color: white; }
+    .service-cta .button:hover {
+      background: linear-gradient(45deg, #34b7f1, #25d366) padding-box, linear-gradient(45deg, #34b7f1, #25d366) border-box; }
+    .service-cta .button img {
+      width: 20px;
+      height: 20px; }
+
+/*!----------------BUSINESS INTELLIGENCE----------------*/
+.hero-business-intelligence {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/business-intelligence.png"); }
+  .hero-business-intelligence .service-header {
+    font-size: 100px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center; }
+  .hero-business-intelligence .service-description {
+    font-size: 25px;
+    font-family: "Poppins";
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center; }
+  .hero-business-intelligence .button {
+    font-size: 20px;
+    border: 0px solid transparent; }
+
+/*!----------------SOPORTE CONTABLE----------------*/
+.hero-soporte-contable {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/soporte-contable.png"); }
+  .hero-soporte-contable .service-header {
+    font-size: 100px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center; }
+  .hero-soporte-contable .service-description {
+    font-size: 25px;
+    font-family: "Poppins";
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center; }
+  .hero-soporte-contable .button {
+    font-size: 20px;
+    border: 0px solid transparent; }
+
+/*!----------------PORTAL CLIENTES----------------*/
 .portal-clientes {
   width: 100%;
   height: 100vh;
@@ -226,5 +350,6 @@ section .testimonios {
     align-items: center; }
     .portal-clientes .login-form .portal-clientes-titulo {
       padding: 0px 0px 50px 0px; }
-    .portal-clientes .login-form a {
+    .portal-clientes .login-form .button {
+      font-size: 15px;
       margin-top: 15px; }

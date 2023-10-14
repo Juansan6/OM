@@ -1,0 +1,134 @@
+/*!----------------SERVICIOS----------------*/
+
+/*!----------------ANÁLISIS DE PROCESOS----------------*/
+
+.hero-analisis-de-procesos{
+    @extend %hero-services;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/analisis-procesos.png");
+    .service-header{
+        font-size: 100px;
+        font-family: "Comfortaa";
+        font-weight: bold;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+    .service-description{
+        font-size: 25px;
+        font-family: "Poppins";
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .button{
+        @extend %button;
+        font-size: 20px;
+        border: 0px solid transparent;
+    }
+}
+
+.service-feature{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 80px 0px 80px 0px;
+    div{
+        width: 350px;
+        // border: 2px solid black;
+        // text-align: justify;
+        h3{
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.service-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, $color-primario, $color-secundario);
+    padding: 80px 0px 80px 0px;
+    color: white;
+    h3{
+        padding-bottom: 20px;
+    }
+    p{
+        width: 90%;
+        //font-size: 30px;
+        text-align: center;
+        //padding: 80px 0px 80px 0px;
+    }
+    .button{
+        @extend %button;
+        font-size: 20px;
+        margin-top: 20px;
+        background: linear-gradient(45deg, #25d366, #34b7f1) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
+        color: white;
+        &:hover{
+            background: linear-gradient(45deg,#34b7f1, #25d366) padding-box, linear-gradient(45deg,#34b7f1, #25d366) border-box;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+/*!----------------BUSINESS INTELLIGENCE----------------*/
+
+.hero-business-intelligence{
+    @extend %hero-services;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/business-intelligence.png");
+    .service-header{
+        font-size: 100px;
+        font-family: "Comfortaa";
+        font-weight: bold;
+        color: white;
+        margin: 0px;
+        text-align: center;
+    }
+    .service-description{
+        font-size: 25px;
+        font-family: "Poppins";
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .button{
+        @extend %button;
+        font-size: 20px;
+        border: 0px solid transparent;
+    }
+}
+
+/*!----------------SOPORTE CONTABLE----------------*/
+
+.hero-soporte-contable{
+    @extend %hero-services;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/soporte-contable.png");
+    .service-header{
+        font-size: 100px;
+        font-family: "Comfortaa";
+        font-weight: bold;
+        color: white;
+        margin: 0px;
+        text-align: center;
+    }
+    .service-description{
+        font-size: 25px;
+        font-family: "Poppins";
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .button{
+        @extend %button;
+        font-size: 20px;
+        border: 0px solid transparent;
+    }
+}

@@ -14,7 +14,7 @@
 <body>
     <header>
         <!--Logo-->
-        <h1>OM</h1>
+        <h1><a href="#" class="logotipo">OM</a></h1>
         <nav class="navbar navbar-expand-lg barra-menu">
             <div class="container-fluid contenedor-hamburguesa">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -23,22 +23,25 @@
                         <li class="nav-item">
                             <a href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="./pages/quienes-somos.html">Quiénes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./pages/precios.html">Precios</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/analisis-de-procesos.html">⚙️ Análisis de procesos</a></li>
+                                <li><a class="dropdown-item" href="./pages/business-intelligence.html">🧠 Business intelligence</a></li>
+                                <li><a class="dropdown-item" href="./pages/soporte-contable.html">💸 Soporte contable</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="./pages/portal-clientes.html">Portal de clientes</a>
                         </li>
                     </ul>
                 </div>
-                <button class="navbar-toggler menu-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler menu-hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -50,7 +53,7 @@
         <section class="hero">
             <p class="heroheader">Inhala... exhala...</p>
             <p class="herotagline">OM te ayuda a administrar.</p>
-            <a href="#servicios" class="button herobutton">Conoce las soluciones</a>
+            <a href="#servicios" class="button">Conoce las soluciones</a>
         </section>
 
         <section>
@@ -61,13 +64,15 @@
                 </div>
                 <div class="grid-item descripcion-servicio">
                     <h3>Análisis de procesos</h3>
-                    <p>Diseñamos y documentamos los procesos administrativos de tu empresa buscando elevar al máximo la eficiencia.</p>
-                    <a href="./pages/servicios.html" class="button">Más información →</a>
+                    <p>Diseñamos y documentamos los procesos administrativos de tu empresa buscando elevar al máximo la
+                        eficiencia.</p>
+                    <a href="./pages/analisis-de-procesos.html" class="button">Más información →</a>
                 </div>
                 <div class="grid-item descripcion-servicio">
                     <h3>Business intelligence</h3>
-                    <p>Nos encargamos del análisis de los datos que recopila tu empresa y te presentamos conclusiones útiles para que puedas tomar las mejores decisiones.</p>
-                    <a href="./pages/servicios.html" class="button">Más información →</a>
+                    <p>Nos encargamos del análisis de los datos que recopila tu empresa y te presentamos conclusiones
+                        útiles para que puedas tomar las mejores decisiones.</p>
+                    <a href="./pages/business-intelligence.html" class="button">Más información →</a>
                 </div>
                 <div class="grid-item">
                     <img src="./img/business-intelligence.png" alt="Business intelligence">
@@ -77,8 +82,8 @@
                 </div>
                 <div class="grid-item descripcion-servicio">
                     <h3>Soporte contable</h3>
-                    <p>Te brindamos asesoría contable para que no te cuelgues con los impuestos, conozcas el estado real de las finanzas de tu empresa y puedas establecer metas de crecimiento.</p>
-                    <a href="./pages/servicios.html" class="button">Más información →</a>
+                    <p>Te brindamos asesoría contable para que no te cuelgues con los impuestos, conozcas el estado real de tu empresa y puedas establecer metas de crecimiento.</p>
+                    <a href="./pages/soporte-contable.html" class="button">Más información →</a>
                 </div>
             </div>
         </section>
@@ -139,9 +144,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

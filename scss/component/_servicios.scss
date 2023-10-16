@@ -1,45 +1,76 @@
 /*!----------------SERVICIOS----------------*/
 
+.service-header{
+    font-size: 100px;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+}
+.service-description{
+    font-size: 25px;
+    font-family: "Poppins";
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.button{
+    @extend %button;
+    font-size: 20px;
+    border: 0px solid transparent;
+}
+
 /*!----------------ANÁLISIS DE PROCESOS----------------*/
 
 .hero-analisis-de-procesos{
     @extend %hero-services;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/analisis-procesos.png");
-    .service-header{
-        font-size: 100px;
-        font-family: "Comfortaa";
-        font-weight: bold;
-        color: white;
-        margin: 0px;
-        text-align: center;
-        padding: 0px;
-    }
-    .service-description{
-        font-size: 25px;
-        font-family: "Poppins";
-        color: white;
-        margin-top: 20px;
-        margin-bottom: 80px;
-        text-align: center;
-    }
-    .button{
-        @extend %button;
-        font-size: 20px;
-        border: 0px solid transparent;
-    }
+    // .service-header{
+    //     font-size: 100px;
+    //     font-family: "Comfortaa";
+    //     font-weight: bold;
+    //     color: white;
+    //     margin: 0px;
+    //     text-align: center;
+    //     padding: 0px;
+    // }
+    // .service-description{
+    //     font-size: 25px;
+    //     font-family: "Poppins";
+    //     color: white;
+    //     margin-top: 20px;
+    //     margin-bottom: 80px;
+    //     text-align: center;
+    // }
+    // .button{
+    //     @extend %button;
+    //     font-size: 20px;
+    //     border: 0px solid transparent;
+    // }
 }
 
 .service-feature{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 50px 80px 50px;
+    gap: 50px;
     div{
         width: 350px;
         // border: 2px solid black;
         // text-align: justify;
-        h3{
+        div{
+            display: flex;
+            align-items: center;
+            gap: 15px;
             padding-bottom: 50px;
+            img{
+            width: 25px;
+            height: 25px;
+            }
         }
     }
 }
@@ -60,6 +91,9 @@
         //font-size: 30px;
         text-align: center;
         //padding: 80px 0px 80px 0px;
+        span{
+            text-decoration-line: underline;
+        }
     }
     .button{
         @extend %button;
@@ -68,7 +102,7 @@
         background: linear-gradient(45deg, #25d366, #34b7f1) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
         color: white;
         &:hover{
-            background: linear-gradient(45deg,#34b7f1, #25d366) padding-box, linear-gradient(45deg,#34b7f1, #25d366) border-box;
+            background: linear-gradient(45deg, #34b7f1, #25d366) padding-box, linear-gradient(45deg, #34b7f1, #25d366) border-box;
         }
         img{
             width: 20px;
@@ -82,27 +116,27 @@
 .hero-business-intelligence{
     @extend %hero-services;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/business-intelligence.png");
-    .service-header{
-        font-size: 100px;
-        font-family: "Comfortaa";
-        font-weight: bold;
-        color: white;
-        margin: 0px;
-        text-align: center;
-    }
-    .service-description{
-        font-size: 25px;
-        font-family: "Poppins";
-        color: white;
-        margin-top: 50px;
-        margin-bottom: 80px;
-        text-align: center;
-    }
-    .button{
-        @extend %button;
-        font-size: 20px;
-        border: 0px solid transparent;
-    }
+    // .service-header{
+    //     font-size: 100px;
+    //     font-family: "Comfortaa";
+    //     font-weight: bold;
+    //     color: white;
+    //     margin: 0px;
+    //     text-align: center;
+    // }
+    // .service-description{
+    //     font-size: 25px;
+    //     font-family: "Poppins";
+    //     color: white;
+    //     margin-top: 50px;
+    //     margin-bottom: 80px;
+    //     text-align: center;
+    // }
+    // .button{
+    //     @extend %button;
+    //     font-size: 20px;
+    //     border: 0px solid transparent;
+    // }
 }
 
 /*!----------------SOPORTE CONTABLE----------------*/
@@ -110,25 +144,25 @@
 .hero-soporte-contable{
     @extend %hero-services;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, $gradient-transp), rgba(0, 0, 0, $gradient-transp)), url("../img/soporte-contable.png");
-    .service-header{
-        font-size: 100px;
-        font-family: "Comfortaa";
-        font-weight: bold;
-        color: white;
-        margin: 0px;
-        text-align: center;
-    }
-    .service-description{
-        font-size: 25px;
-        font-family: "Poppins";
-        color: white;
-        margin-top: 50px;
-        margin-bottom: 80px;
-        text-align: center;
-    }
-    .button{
-        @extend %button;
-        font-size: 20px;
-        border: 0px solid transparent;
-    }
+    // .service-header{
+    //     font-size: 100px;
+    //     font-family: "Comfortaa";
+    //     font-weight: bold;
+    //     color: white;
+    //     margin: 0px;
+    //     text-align: center;
+    // }
+    // .service-description{
+    //     font-size: 25px;
+    //     font-family: "Poppins";
+    //     color: white;
+    //     margin-top: 50px;
+    //     margin-bottom: 80px;
+    //     text-align: center;
+    // }
+    // .button{
+    //     @extend %button;
+    //     font-size: 20px;
+    //     border: 0px solid transparent;
+    // }
 }

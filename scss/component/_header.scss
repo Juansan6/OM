@@ -48,6 +48,20 @@ header{
                     .dropdown-menu{
                         --bs-dropdown-bg: #000;
                     }
+                    .button{
+                        @extend %button;
+                        font-size: 16px;
+                        background: linear-gradient(black, black) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
+                        //background: linear-gradient(45deg, #25d366, #34b7f1) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
+                        color: white;
+                        &:hover{
+                            background: linear-gradient(45deg, #25d366, #34b7f1) padding-box, linear-gradient(45deg, #25d366, #34b7f1) border-box;
+                        }
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
                 }
             }
             .menu-hamburguesa{

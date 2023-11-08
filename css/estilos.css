@@ -1,31 +1,4 @@
 @charset "UTF-8";
-header .barra-menu .contenedor-hamburguesa div li .button, footer .footer .footer-element .button, .hero .button, section .grid-servicios .descripcion-servicio .button, .button, .service-cta .button, .portal-clientes .login-form .button {
-  font-family: "Poppins";
-  color: black;
-  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box;
-  text-decoration: none;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 25px;
-  border: 2px solid transparent;
-  width: fit-content; }
-  header .barra-menu .contenedor-hamburguesa div li .button:hover, footer .footer .footer-element .button:hover, section .grid-servicios .descripcion-servicio .button:hover, .button:hover, .portal-clientes .login-form .button:hover {
-    color: white;
-    background: linear-gradient(45deg, #4242eb, #f40ec6) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box; }
-
-.hero-analisis-de-procesos, .hero-business-intelligence, .hero-soporte-contable {
-  width: 100%;
-  height: calc(100vh - 68px);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 @font-face {
   font-family: "Comfortaa";
   src: url(../fonts/Comfortaa/Comfortaa-VariableFont-wght.ttf); }
@@ -59,6 +32,33 @@ p {
   margin: 0px;
   font-family: "Poppins";
   font-size: 20px; }
+
+header .barra-menu .contenedor-hamburguesa div li .button, footer .footer .footer-element .button, .hero .button, section .grid-servicios .descripcion-servicio .button, .service-hero a, .service-cta .button, .portal-clientes .login-form .button {
+  font-family: "Poppins";
+  color: black;
+  background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  width: fit-content; }
+  header .barra-menu .contenedor-hamburguesa div li .button:hover, footer .footer .footer-element .button:hover, .hero .button:hover, section .grid-servicios .descripcion-servicio .button:hover, .service-hero a:hover, .service-cta .button:hover, .portal-clientes .login-form .button:hover {
+    color: white;
+    background: linear-gradient(45deg, #4242eb, #f40ec6) padding-box, linear-gradient(45deg, #4242eb, #f40ec6) border-box; }
+
+.hero, .hero-analisis-de-procesos, .hero-business-intelligence, .hero-soporte-contable {
+  width: 100%;
+  height: calc(100vh - 68px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /*!----------------HEADER----------------*/
 header {
@@ -157,17 +157,7 @@ footer {
 
 /*!----------------INDEX----------------*/
 .hero {
-  width: 100%;
-  height: calc(100vh - 68px);
-  background-image: url("../img/fondo-herosection6.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-image: url("../img/fondo-herosection6.png"); }
   .hero .heroheader {
     font-size: 100px;
     font-family: "Comfortaa";
@@ -238,7 +228,19 @@ section .testimonios {
         padding-left: 15px; }
 
 /*!----------------SERVICIOS----------------*/
-.service-header {
+/*!----------------ANÁLISIS DE PROCESOS----------------*/
+.hero-analisis-de-procesos {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/analisis-procesos.png"); }
+
+/*!----------------BUSINESS INTELLIGENCE----------------*/
+.hero-business-intelligence {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/business-intelligence.png"); }
+
+/*!----------------SOPORTE CONTABLE----------------*/
+.hero-soporte-contable {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/soporte-contable.png"); }
+
+.service-hero h2 {
   font-size: 100px;
   font-family: "Comfortaa";
   font-weight: bold;
@@ -247,7 +249,7 @@ section .testimonios {
   text-align: center;
   padding: 0px; }
 
-.service-description {
+.service-hero p {
   font-size: 25px;
   font-family: "Poppins";
   color: white;
@@ -255,13 +257,9 @@ section .testimonios {
   margin-bottom: 80px;
   text-align: center; }
 
-.button {
+.service-hero a {
   font-size: 20px;
   border: 0px solid transparent; }
-
-/*!----------------ANÁLISIS DE PROCESOS----------------*/
-.hero-analisis-de-procesos {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/analisis-procesos.png"); }
 
 .service-feature {
   display: flex;
@@ -269,14 +267,18 @@ section .testimonios {
   flex-wrap: wrap;
   padding: 80px 50px 80px 50px;
   gap: 50px; }
-  .service-feature div {
-    width: 350px; }
-    .service-feature div div {
+  .service-feature .feature {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .service-feature .feature div {
       display: flex;
       align-items: center;
       gap: 15px;
       padding-bottom: 50px; }
-      .service-feature div div img {
+      .service-feature .feature div img {
         width: 25px;
         height: 25px; }
 
@@ -289,7 +291,8 @@ section .testimonios {
   padding: 80px 0px 80px 0px;
   color: white; }
   .service-cta h3 {
-    padding-bottom: 20px; }
+    padding-bottom: 30px;
+    text-align: center; }
   .service-cta p {
     width: 90%;
     text-align: center; }
@@ -305,14 +308,6 @@ section .testimonios {
     .service-cta .button img {
       width: 20px;
       height: 20px; }
-
-/*!----------------BUSINESS INTELLIGENCE----------------*/
-.hero-business-intelligence {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/business-intelligence.png"); }
-
-/*!----------------SOPORTE CONTABLE----------------*/
-.hero-soporte-contable {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/soporte-contable.png"); }
 
 /*!----------------PORTAL CLIENTES----------------*/
 .portal-clientes {
@@ -340,3 +335,76 @@ section .testimonios {
     .portal-clientes .login-form .button {
       font-size: 15px;
       margin-top: 15px; }
+
+@media screen and (max-width: 1140px) {
+  .portal-clientes {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .portal-clientes .img-container-portal-clientes {
+      height: 250px;
+      width: 100%; }
+    .portal-clientes .login-form {
+      padding: 50px 0px 50px 0px; } }
+
+@media screen and (max-width: 920px) {
+  section .testimonio .cliente {
+    flex-direction: column; } }
+
+@media screen and (max-width: 800px) {
+  section .grid-servicios .descripcion-servicio {
+    padding: 0px 20px 0px 20px; } }
+
+@media screen and (max-width: 700px) {
+  .descripcion-servicio {
+    padding: 0px 20px 0px 20px; }
+  section .grid-servicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: 6;
+    text-align: center;
+    row-gap: 50px; }
+    section .grid-servicios .grid-item {
+      grid-column: span 1;
+      align-items: center; }
+      section .grid-servicios .grid-item img {
+        width: 60%;
+        object-fit: cover; }
+      section .grid-servicios .grid-item:nth-of-type(1) {
+        order: 1; }
+      section .grid-servicios .grid-item:nth-of-type(2) {
+        order: 2; }
+      section .grid-servicios .grid-item:nth-of-type(3) {
+        order: 4; }
+      section .grid-servicios .grid-item:nth-of-type(4) {
+        order: 3; }
+      section .grid-servicios .grid-item:nth-of-type(5) {
+        order: 5; }
+      section .grid-servicios .grid-item:nth-of-type(6) {
+        order: 6; }
+  section .testimonios {
+    flex-direction: column; }
+    section .testimonios .testimonio {
+      padding: 0px 30px 30px 30px; }
+      section .testimonios .testimonio .cliente {
+        flex-direction: row; }
+        section .testimonios .testimonio .cliente img {
+          padding-top: 0px; }
+  .service-hero h2 {
+    font-size: 70px; }
+  .service-hero p {
+    font-size: 20px; }
+  .service-hero a {
+    font-size: 15px; } }
+
+@media screen and (max-width: 450px) {
+  body h2 {
+    font-size: 40px; }
+  .hero .heroheader {
+    font-size: 70px; }
+  .hero .herotagline {
+    font-size: 40px; }
+  section .testimonios .testimonio .cliente {
+    flex-direction: column; }
+  .service-hero h2 {
+    font-size: 50px; } }

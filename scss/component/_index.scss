@@ -1,17 +1,8 @@
 /*!----------------INDEX----------------*/
 
 .hero{
-    width: 100%;
-    height: calc(100vh - 68px);
+    @extend %hero-sections;
     background-image: url("../img/fondo-herosection6.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .heroheader{
         font-size: 100px;
         font-family: "Comfortaa";
@@ -31,8 +22,7 @@
         @extend %button;
         font-size: 20px;
         border: 0px solid transparent;
-    }
-    
+    }   
 }
 
 section{

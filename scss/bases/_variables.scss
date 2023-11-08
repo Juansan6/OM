@@ -1,42 +1,7 @@
 //Paleta de colores
 
-$color-primario: hsl(240, 81%, 59%);
+$color-primario: #4242eb;
 $color-secundario: #f40ec6;
 
 //Transparencia de gradiente para opacar imágenes
 $gradient-transp: 0.7;
-
-//Estilo de los botones
-
-%button {
-    //font-size: ;
-    font-family: "Poppins";
-    color: rgb(0, 0, 0);
-    background: linear-gradient(white, white) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
-    text-decoration: none;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 25px;
-    border: 2px solid transparent;
-    width: fit-content;
-    &:hover{
-        color: rgb(255, 255, 255);
-        background: linear-gradient(45deg, $color-primario, $color-secundario) padding-box, linear-gradient(45deg, $color-primario, $color-secundario) border-box;
-    }
-}
-
-//Hero section de los servicios
-
-%hero-services {
-    width: 100%;
-    height: calc(100vh - 68px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
